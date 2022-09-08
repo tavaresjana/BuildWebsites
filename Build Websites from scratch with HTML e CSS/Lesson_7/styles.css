@@ -1,0 +1,210 @@
+/* Lesson 7
+Jana Tavares
+Setembro 2022 */
+
+* {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+body {
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #353535;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* os valores que você pode usar é bold, lighter */
+}
+
+h1 {
+    font-size: 3em; /* significa 3 vezes o tamanho da fonte atual, que é 16px */
+}
+
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+    letter-spacing: -1px;  /* altera o espaçamento entre as letras de uma palavra*/
+    word-spacing: 10px;    /* altera o espaçamento entre as letras de uma frase */
+    text-align: center;   /* pode ser left, right, center, justify etc */
+}
+
+blockquote {
+    margin: 0 0 0 30px;
+    font-style: italic; /* pode ser italic ou normal*/
+    text-indent: 80px ;  /* identa a primeira linha de um paragrafo pode usar px ou % */
+    line-height: 1.3; 
+    /* line height é o quão alta as linhas de texto estão em relação aos elementos 
+    podemos usar valores como 3 que fará com que o line height seja 3x o font-size
+    pode usar px ou em, % também é aceito*/
+}
+
+span {
+    text-decoration: line-through;
+    /* você pode usar os valores: underline, overline, line-through, none */
+}
+
+em {
+    text-transform: capitalize;
+    /* você pode usar os valores: uppercase, lowercase, capitalize, none */
+}
+strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: #3ca;
+    text-decoration: none;
+}
+
+code {
+    display: block;
+    color: #e96c28;
+    background: white;
+    padding: 5px;
+}
+
+/* Borders */
+
+.border-box {
+    background: #eee;
+    margin: 0 0 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+#box-1 {
+    border: solid 1px black; /* linha preta fina em volta como borda */
+}
+
+#box-2 {
+    border: dashed 1px black;
+    /* linha tracejada preta fina em volta como borda */
+}
+
+#box-3 {
+    border: dotted 1px black;
+    /* linha pontilhada preta fina em volta como borda */
+}
+
+#box-4 {
+    border: double 3px black;
+    /* linha preta de 3px em volta como borda */
+}
+
+#box-5 {
+    border: solid 4px black;
+    /* linha preta de 4px em volta como borda */
+}
+
+#box-6 {
+    border: dashed 4px black;
+    /* linha tracejada preta grossa em volta como borda */
+}
+
+#box-7 {
+    border: dotted 4px black;
+    /* linha pontilhada preta 4px em volta como borda */
+}
+
+#box-8 {
+    border: double 6px black;
+    /* linha preta de 6px em volta como borda */
+}
+
+/* Background images */
+
+.background-example {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+}
+
+#background-1 {
+    /* background images repeat X & Y and são posicionados no top esquerdo */
+    background-image: url('images/blue_background.jpg');
+}
+
+#background-2 {
+    background-color: #a3d;
+}
+
+#background-3 {
+    background-image: url('images/steak_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#background-4 {
+    background: url(images/skull_background.jpg) bottom left repeat-x;
+}
+
+/* Forms */
+#container {
+    width: 500px;
+    margin: 0 auto;
+}
+form {
+    background-image: url(images/red_background.jpg);
+    padding: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form fieldset {
+    background-image: url(images/blue_background.jpg);
+    padding: 40px;
+    border: solid 1px white;
+}
+
+form legend {
+    border: solid 1px #333;
+    background: url(images/blue_background.jpg);
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: block; /* fez com que cada input ficasse sua própria linha */
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility; 
+}
+form label{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+/* personalizando os inputs do form */
+form input[type="text"], form input[type="email"], form textarea {
+padding: 10px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+border: solid 1px #b90707;
+background-image: url('images/red_background.jpg');
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    border: none;
+    background: url('images/button_background.jpg') top left repeat-x;
+    height: 40px;
+    padding: 0 20px;
+    border: solid 1px #d4730c;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
